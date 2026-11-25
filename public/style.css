@@ -1,0 +1,183 @@
+/* =========================================
+   Global Reset & Stylesheet
+   ========================================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
+    background-color: #f8fafc;
+    color: #1e293b;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* =========================================
+   Navigation Bar
+   ========================================= */
+.navbar {
+    background-color: #ffffff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    padding: 16px 8vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar .logo {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #0284c7;
+    text-decoration: none;
+}
+
+.navbar .nav-links {
+    display: flex;
+    list-style: none;
+    gap: 24px;
+}
+
+.navbar .nav-links a {
+    text-decoration: none;
+    color: #475569;
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: color 0.2s ease;
+}
+
+.navbar .nav-links a:hover,
+.navbar .nav-links a.active {
+    color: #0284c7;
+    font-weight: 600;
+}
+
+/* =========================================
+   Main Container & Card Content
+   ========================================= */
+.container {
+    flex: 1;
+    max-width: 900px;
+    width: 90%;
+    margin: 40px auto;
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.02);
+}
+
+.page-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 12px;
+}
+
+.page-subtitle {
+    font-size: 1.05rem;
+    color: #64748b;
+    margin-bottom: 30px;
+}
+
+.badge {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 9999px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    background-color: #e0f2fe;
+    color: #0284c7;
+    margin-bottom: 16px;
+}
+
+/* Content Sections */
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+    margin-top: 25px;
+}
+
+.feature-box {
+    background-color: #f8fafc;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #edf2f7;
+}
+
+.feature-box h3 {
+    font-size: 1.1rem;
+    color: #1e293b;
+    margin-bottom: 8px;
+}
+
+.feature-box p {
+    font-size: 0.9rem;
+    color: #64748b;
+}
+
+/* Contact Info List */
+.contact-list {
+    list-style: none;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.contact-list li {
+    font-size: 1rem;
+    color: #334155;
+}
+
+/* Button & Links */
+.btn {
+    display: inline-block;
+    padding: 10px 22px;
+    background-color: #0284c7;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: background-color 0.2s ease;
+    margin-top: 20px;
+}
+
+.btn:hover {
+    background-color: #0369a1;
+}
+
+/* 404 Error State */
+.error-page {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.error-code {
+    font-size: 5rem;
+    font-weight: 800;
+    color: #ef4444;
+    line-height: 1;
+    margin-bottom: 12px;
+}
+
+/* =========================================
+   Footer
+   ========================================= */
+.footer {
+    background-color: #ffffff;
+    border-top: 1px solid #e2e8f0;
+    padding: 20px 8vw;
+    text-align: center;
+    font-size: 0.88rem;
+    color: #94a3b8;
+}

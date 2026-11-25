@@ -1,0 +1,12 @@
+{
+  "name": "assignment-6-nodejs-web-server",
+  "version": "1.0.0",
+  "description": "Simple web server built with Node.js http and fs modules",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": ["nodejs", "http-server", "routing"],
+  "author": "Harsh Raj",
+  "license": "ISC"
+}
